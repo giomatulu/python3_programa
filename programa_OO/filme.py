@@ -6,10 +6,13 @@ class Filme(Programa):
         super().__init__(nome, ano)
         self.duracao = duracao
 
-v_de_vinganca = Filme("v de vingança", 2005, 133)
+    def imprime(self):
+        print(f" {self._nome} ({self.ano}) — Duração: {self.duracao} min — {self._likes} Likes")
 
+v_de_vinganca = Filme("v de vingança", 2005, 133)
 v_de_vinganca.dar_like()
 
-print(f"Nome: {v_de_vinganca.nome} - Ano: {v_de_vinganca.ano} - "
-      f"Duração: {v_de_vinganca.duracao} - Likes: {v_de_vinganca.likes}")
+harry_potter_4 = Filme("harry potter e o cálice de fogo", 2005, 157)
+harry_potter_4.dar_like()
+
 

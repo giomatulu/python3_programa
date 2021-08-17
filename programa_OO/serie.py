@@ -6,9 +6,9 @@ class Serie(Programa):
         super().__init__(nome, ano)
         self.temporadas = temporadas
 
+    def imprime(self):
+        print(f" {self._nome} ({self.ano}) — {self.temporadas} temporadas — {self._likes} Likes")
+
 sherlock = Serie("sherlock", 2010, 3)
 
 sherlock.dar_like()
-
-print(f"Nome: {sherlock.nome} - Ano: {sherlock.ano} "
-      f"- Temporadas: {sherlock.temporadas} - Likes: {sherlock.likes}")
