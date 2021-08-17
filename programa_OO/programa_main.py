@@ -7,4 +7,4 @@ print("\n —— PROGRAMAÇÃO PARA O FIM DE SEMANA —— \n")
 playlist = [v_de_vinganca, sherlock, harry_potter_4]
 
 for programa in playlist:
-    programa.imprime()
+    print(programa)
