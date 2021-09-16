@@ -6,8 +6,8 @@ class Filme(Programa):
         super().__init__(nome, ano)
         self.duracao = duracao
 
-    def __str__(self):
-        return f" {self._nome} ({self.ano}) — Duração: {self.duracao} min — {self._likes} Likes"
+    def imprime(self):
+        print(f" {self._nome} ({self.ano}) — Duração: {self.duracao} min — {self._likes} Likes")
 
 v_de_vinganca = Filme("v de vingança", 2005, 133)
 v_de_vinganca.dar_like()

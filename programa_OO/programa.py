@@ -19,8 +19,8 @@ class Programa:
     def nome(self, novo_nome):
         self._nome = novo_nome.title()
 
-    def __str__(self):
-        return f" {self._nome} ({self.ano}) — {self._likes} Likes"
+    def imprime(self):
+        print(f" {self._nome} ({self.ano}) — {self._likes} Likes")
 
 
 

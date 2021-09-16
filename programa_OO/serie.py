@@ -6,8 +6,8 @@ class Serie(Programa):
         super().__init__(nome, ano)
         self.temporadas = temporadas
 
-    def __str__(self):
-        return f" {self._nome} ({self.ano}) — {self.temporadas} temporadas — {self._likes} Likes"
+    def imprime(self):
+        print(f" {self._nome} ({self.ano}) — {self.temporadas} temporadas — {self._likes} Likes")
 
 sherlock = Serie("sherlock", 2010, 3)
 
